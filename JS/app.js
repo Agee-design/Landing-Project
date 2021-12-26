@@ -29,7 +29,19 @@
  * Start Helper Functions
  * 
 */
-
+/* Start to creat Dynamic NavBarMenu */
+const sections = Array.from(document.getElementsByTagName("section"));
+for(let section of sections){
+    const NavBarMenu = document.quereySelector(".navbar__menu");/* select the element that have id navbar__menu and put in NavBarMenu variabel*/
+    const navBarList = document.getElementById("navbar__list"); /* return the element that has id navbar__list and put in navBarlist variabel*/
+    const listItem = document.createElement('li'); /* creat list item in put in listitem variabel*/
+    const a = document.creatElement("a"); /* creat tag element an assigned into a variael */
+    li.appendChild(a);
+    navBarList.appendChild(listItem); /* add the item in last navbar list */
+    NavBarMenu.appendChild(navBarList); /* add the list and put in the last child */
+    const sectionName = sections[i].appendChild(NavBarMenu);
+    document.body.appendChild(sectionName);
+    }
 
 
 /**
