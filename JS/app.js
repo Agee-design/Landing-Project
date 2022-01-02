@@ -1,5 +1,6 @@
  
 document.addEventListener('DOMContentLoaded', ActiveNavBar, false); 
+document.addEventListener('DOMContentLoaded', ActiveSection, false);
 
 /**
  * 
@@ -66,13 +67,13 @@ function ActiveSection (){
 					activeClass[0].className = activeClass[0].className.replace (" your-active-class", "");
 					element[i].className += " your-active-class";
 			
-					const current = document.getElementsByClassName("active");  
+					const current = document.getElementsByClassName("your-active-cla");  
 						if (current.length > 0) {
-							current[0].className = current[0].className.replace(" active", "");
+							current[0].className = current[0].className.replace(" your-active-cla", "");
 						}
 			
 					const links = document.getElementById("navbar__list").querySelectorAll('li');
-					links[i].className += " active";
+					links[i].className += " your-active-cla";
 				};
 		};
 	}); 
