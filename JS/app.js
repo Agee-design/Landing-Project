@@ -67,13 +67,13 @@ function ActiveSection (){
 					activeClass[0].className = activeClass[0].className.replace (" your-active-class", "");
 					element[i].className += " your-active-class";
 			
-					const current = document.getElementsByClassName("your-active-cla");  
+					const current = document.getElementsByClassName("your-active-class");  
 						if (current.length > 0) {
-							current[0].className = current[0].className.replace(" your-active-cla", "");
+							current[0].className = current[0].className.replace(" your-active-class", "");
 						}
 			
 					const links = document.getElementById("navbar__list").querySelectorAll('li');
-					links[i].className += " your-active-cla";
+					links[i].className += " your-active-class";
 				};
 		};
 	}); 
@@ -98,12 +98,12 @@ function ActiveNavBar (){
 	// Loop through the linked list and add the active navBar to the current/clicked button
 	for (let i = 0; i < links.length; i++) {
   		 links[i].addEventListener("click", function() {
-			const current = document.getElementsByClassName("active");  
+			const current = document.getElementsByClassName("your-active-class");  
     		if (current.length > 0) {
-      			current[0].className = current[0].className.replace(" active", "");
+      			current[0].className = current[0].className.replace(" your-active-class", "");
     		}
 			// Add the active navBar to the current/clicked button
-    	current[0].className  += "active";
+    	current[0].className  += "your-active-class";
  		});
 	};
 }
