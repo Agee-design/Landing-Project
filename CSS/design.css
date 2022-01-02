@@ -64,9 +64,16 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.navbar__menu {
+    
+    background-color: rgba(0,13,60,1);
+}
 .navbar__menu ul {
+    display: flex;
+    flex-direction: row;
     padding-left: 0;
     margin: 0;
+    right: 0;
     text-align: right;
 }
 
@@ -79,7 +86,7 @@ section {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .navbar__menu .menu__link:hover {
