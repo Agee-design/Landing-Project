@@ -1,5 +1,5 @@
  
-document.addEventListener('DOMContentLoaded', ActiveNavBar, false); 
+
 document.addEventListener('DOMContentLoaded', ActiveSection, false);
 
 /**

@@ -89,7 +89,7 @@ section {
     color: white;
 }
 
-.navbar__menu .menu__link:hover {
+.navbar__menu .menu__link, your-active-class :hover {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
